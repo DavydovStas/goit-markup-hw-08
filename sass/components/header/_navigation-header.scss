@@ -1,0 +1,43 @@
+// Навигация Хэдера
+
+.navigation,
+.navigation .list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .list {
+  margin-left: 85px;
+  /* padding: 32px 0px; */
+}
+
+.navigation li + li {
+  margin-left: 50px;
+}
+
+.header .navigation {
+  color: $title-text-color;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.navigation .link:hover,
+.navigation .link:focus {
+  color: $accent-color;
+}
+
+.navigation .link {
+  padding: 32px 0px;
+  color: inherit;
+
+  height: 80px;
+}
+
+.navigation li {
+  display: flex;
+
+  height: 100%;
+}

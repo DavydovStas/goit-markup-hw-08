@@ -1,0 +1,84 @@
+// Cекция постоянных клиентов
+
+.clients .container {
+  padding: 94px 0;
+}
+
+.clients .title {
+  margin: 0;
+  color: $title-text-color;
+  font-size: 36px;
+  line-height: 1.17;
+  /* text-align: center; */
+}
+
+.clients ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  /* padding: 0; */
+}
+
+.clients li {
+  width: 170px;
+}
+
+.clients li + li {
+  margin-left: 30px;
+}
+
+.clients .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90px;
+  border: 1px solid $icons-color;
+
+  border-radius: 4px;
+
+  color: $icons-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-icon {
+  display: flex;
+  fill: currentColor;
+}
+
+.company-icon.first {
+  width: 44px;
+  height: 50px;
+}
+
+.company-icon.second {
+  width: 40px;
+  height: 52px;
+}
+
+.company-icon.third {
+  width: 41px;
+  height: 43px;
+}
+
+.company-icon.fourth {
+  width: 80px;
+  height: 42px;
+}
+
+.company-icon.fifth {
+  width: 59px;
+  height: 47px;
+}
+
+.company-icon.sixth {
+  width: 88px;
+  height: 45px;
+}
+
+.clients .link:hover,
+.clients .link:focus {
+  color: $accent-color;
+  border: 1px solid $accent-color;
+}

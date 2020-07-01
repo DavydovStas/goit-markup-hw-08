@@ -1,0 +1,40 @@
+// Оформление кнопок с фильтрами
+
+.filter .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: left;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-list li + li {
+  margin-left: 8px;
+}
+
+.button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-width: 0px;
+
+  color: $title-text-color;
+  background-color: #f5f4fa;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: $primary-white-color;
+    background-color: $accent-color;
+  }
+}

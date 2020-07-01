@@ -1,0 +1,30 @@
+// Стили блока Адреса в Футере
+
+.logo-adres {
+  text-align: left;
+  margin-right: 64px;
+}
+
+.adress-footer > * {
+  margin-top: 9px;
+}
+
+.adress-footer {
+  flex-direction: column;
+  min-width: 231px;
+}
+
+.city {
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 1.71;
+  /* margin: 0; */
+}
+
+.adress-footer .link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.71;
+}

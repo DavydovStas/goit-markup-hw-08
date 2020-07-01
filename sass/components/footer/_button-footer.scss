@@ -1,0 +1,29 @@
+.form .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+
+  border-radius: 4px;
+  min-width: 200px;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.form .link:focus {
+  background-color: $accent-color;
+}
+
+.form .airplane {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  fill: $primary-white-color;
+}

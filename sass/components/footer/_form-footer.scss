@@ -1,0 +1,19 @@
+// Форма в Футере (TEXTAREA)
+
+.footer-form-textarea {
+  width: 358px;
+  height: 51px;
+  padding: 14px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: inherit;
+  outline: none;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  resize: none;
+}
