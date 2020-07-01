@@ -9,36 +9,36 @@ body {
   letter-spacing: 0.03em;
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
-}
+// .header .container {
+//   display: flex;
+//   align-items: center;
+// }
 
 .footer {
-  padding-top: 48px;
+  // padding-top: 48px;
   background-color: $footer-color;
 }
 
-.footer .container {
-  display: flex;
-  margin-bottom: 18px;
-  padding-bottom: 28px;
-}
+// .footer .container {
+//   display: flex;
+//   margin-bottom: 18px;
+//   padding-bottom: 28px;
+// }
 
-.form {
-  flex-direction: column;
-  margin-top: 8px;
-}
+// .form {
+//   flex-direction: column;
+//   margin-top: 8px;
+// }
 
-.form > li {
-  display: flex;
-}
+// .form > li {
+//   display: flex;
+// }
 
 .container {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
+  // text-align: center;
+  // margin-left: auto;
+  // margin-right: auto;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid tomato; */
@@ -55,7 +55,7 @@ a {
 
 address {
   font-style: normal;
-  display: flex;
+  // display: flex;
 }
 
 ul,
