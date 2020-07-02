@@ -1,18 +1,22 @@
 // Блок Join в футере
 
-.join {
-  // margin-top: 8px;
-  // margin-right: 94px;
-}
+// .join {
+//   // margin-top: 8px;
+//   // margin-right: 94px;
+// }
 
 // .join > li {
 //   display: flex;
 // }
 
-// .join .list {
-//   display: flex;
-//   margin-top: 21px;
-// }
+.join .list {
+  display: flex;
+  // margin-top: 21px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+}
 
 .join .link {
   display: flex;

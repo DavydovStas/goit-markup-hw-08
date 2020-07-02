@@ -18,6 +18,11 @@
   background-position: center;
   background-size: contain;
   background-color: $text-color;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 
 .hero .title {
@@ -29,7 +34,10 @@
   line-height: 1.36;
   /* text-align: center; */
   letter-spacing: 0.06em;
-  /* text-transform: uppercase; */
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .button-link {
@@ -37,7 +45,7 @@
   border-radius: 4px;
   min-width: 200px;
   padding: 10px 32px;
-  margin-top: 38px;
+  // margin-top: 38px;
 
   color: inherit;
   background-color: $accent-color;

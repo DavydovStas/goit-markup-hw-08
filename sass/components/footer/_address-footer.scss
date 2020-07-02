@@ -3,10 +3,28 @@
 .logo-adres {
   text-align: left;
   // margin-right: 64px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    // margin-bottom: 60px;
+  }
+}
+
+.logo-adres .logo {
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .adress-footer > * {
   margin-top: 9px;
+}
+
+.adress-footer .link {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
 }
 
 // .adress-footer {

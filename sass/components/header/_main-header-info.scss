@@ -18,6 +18,10 @@
   margin: 0px;
   border: none;
   background-color: inherit;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {

@@ -9,19 +9,39 @@
   color: $title-text-color;
   font-size: 36px;
   line-height: 1.17;
-  /* text-align: center; */
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
-// .clients ul {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin-top: 50px;
-//   /* padding: 0; */
-// }
+.clients ul {
+  display: flex;
+  flex-wrap: wrap;
+  // margin-top: 50px;
+  /* padding: 0; */
+}
 
-// .clients li {
-//   width: 170px;
-// }
+.clients li {
+  width: 170px;
+
+  @media screen and (max-width: 767px) {
+    width: calc(100% / 2 - 15px);
+  }
+}
+
+.clients li:nth-child(2n) {
+  @media screen and (max-width: 767px) {
+    margin-left: 30px;
+  }
+}
+
+.clients li:nth-child(n + 3) {
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
+}
 
 // .clients li + li {
 //   margin-left: 30px;
