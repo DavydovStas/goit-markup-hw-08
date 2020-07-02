@@ -24,6 +24,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .container {
     padding-top: 60px;
@@ -31,9 +37,11 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 768px;
+    max-width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -104,6 +112,13 @@ h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .container {
     padding-top: 0px;
     padding-bottom: 0px;
   }
@@ -228,13 +243,6 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .adres {
-    margin-left: auto;
-    margin-left: 50px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .adres {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -245,6 +253,23 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adres {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adres {
+    margin-left: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 305px;
   }
 }
 
@@ -272,7 +297,7 @@ h6 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .adres .link + .link {
     margin-top: 10px;
   }
@@ -281,6 +306,12 @@ h6 {
 @media screen and (max-width: 767px) {
   .adres .link + .link {
     margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adres .link + .link {
+    margin-left: 30px;
   }
 }
 
@@ -553,6 +584,13 @@ h6 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero .title {
   margin: 0;
   margin-bottom: 30px;
@@ -591,6 +629,12 @@ h6 {
       flex-wrap: wrap;
 }
 
+@media screen and (min-width: 1200px) {
+  .advantages > .container {
+    padding-bottom: 0px;
+  }
+}
+
 .advantages-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,8 +656,20 @@ h6 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .advantages li {
+    width: calc(100% / 4 - 23px);
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .advantages li:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages li + li {
     margin-left: 30px;
   }
 }
@@ -662,8 +718,8 @@ h6 {
 }
 
 .activity .grand-title {
-  display: inline-block;
   /* margin-top: 94px; */
+  text-align: center;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -738,8 +794,20 @@ h6 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .team-list > li {
+    width: calc(100% / 4 - 23px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-list > li:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list li + li {
     margin-left: 30px;
   }
 }
@@ -757,6 +825,12 @@ h6 {
   text-align: center;
   font-size: 36px;
   line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+  .team .grand-title {
+    margin-bottom: 50px;
+  }
 }
 
 .team .title {

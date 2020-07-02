@@ -19,10 +19,9 @@
   display: flex;
   flex-wrap: wrap;
 
-  // @media screen and (max-width: 1199px) {
-  //   padding-top: 60px;
-  //   padding-bottom: 60px;
-  // }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
+  }
 }
 
 .advantages-container {
@@ -41,10 +40,20 @@
   @media screen and (max-width: 1199px) {
     width: calc(100% / 2 - 15px);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 23px);
+  }
 }
 
 .advantages li:nth-child(2n) {
   @media screen and (max-width: 1199px) {
+    margin-left: 30px;
+  }
+}
+
+.advantages li + li {
+  @media screen and (min-width: 1200px) {
     margin-left: 30px;
   }
 }

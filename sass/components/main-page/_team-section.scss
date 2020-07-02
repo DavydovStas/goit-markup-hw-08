@@ -44,10 +44,20 @@
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 15px);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 23px);
+  }
 }
 
 .team-list > li:nth-child(2n) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 30px;
+  }
+}
+
+.team-list li + li {
+  @media screen and (min-width: 1200px) {
     margin-left: 30px;
   }
 }
@@ -70,6 +80,10 @@
   text-align: center;
   font-size: 36px;
   line-height: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .team .title {
