@@ -21,6 +21,11 @@
     width: 200px;
     height: 50px;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    height: 50px;
+  }
 }
 
 .form .link:focus {

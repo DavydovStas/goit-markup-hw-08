@@ -16,6 +16,10 @@
     margin-left: 165px;
     text-align: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 69px;
+  }
 }
 
 .join .list {

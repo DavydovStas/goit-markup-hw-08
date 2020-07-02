@@ -1,5 +1,14 @@
 // Стили блока Адреса в Футере
 
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .logo-adres {
   text-align: left;
   // margin-right: 64px;
@@ -17,9 +26,14 @@
 }
 
 .logo-adres .logo {
+  display: block;
+
   @media screen and (max-width: 1199px) {
-    display: block;
     text-align: center;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-bottom: 20px;
   }
 }
@@ -35,10 +49,13 @@
   }
 }
 
-// .adress-footer {
-//   flex-direction: column;
-//   // min-width: 231px;
-// }
+.adress-footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    min-width: 231px;
+  }
+}
 
 .city {
   color: #ffffff;

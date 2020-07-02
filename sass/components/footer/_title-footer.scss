@@ -1,4 +1,6 @@
 .footer .title {
+  display: block;
+  margin-bottom: 20px;
   color: #ffffff;
 
   font-weight: 700;
@@ -7,16 +9,17 @@
   text-transform: uppercase;
 
   @media screen and (max-width: 1199px) {
-    display: block;
     text-align: center;
     margin-top: 60px;
-    margin-bottom: 20px;
-    // margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
   }
 }
 
 .list.join .title {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 0px;
   }
 }

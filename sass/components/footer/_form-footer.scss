@@ -1,4 +1,16 @@
-// Форма в Футере (TEXTAREA)
+// Форма в Футере (TEXTAREA+другая разметка)
+
+.list.form {
+  @media screen and (min-width: 1200px) {
+    margin-left: 94px;
+  }
+}
+
+.footer-form {
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
+}
 
 .footer-form-textarea {
   // width: 358px;
@@ -17,16 +29,22 @@
   letter-spacing: 0.03em;
   resize: none;
 
-  @media screen and (max-width: 767px) and (min-width: 768px) {
-    width: 100%;
+  @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
     width: 450px;
-    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 350px;
   }
 }

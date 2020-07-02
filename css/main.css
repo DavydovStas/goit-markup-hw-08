@@ -357,6 +357,19 @@ h6 {
   border-radius: 2px;
 }
 
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .logo-adres {
   text-align: left;
 }
@@ -380,10 +393,19 @@ h6 {
   }
 }
 
+.logo-adres .logo {
+  display: block;
+}
+
 @media screen and (max-width: 1199px) {
   .logo-adres .logo {
-    display: block;
     text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-adres .logo {
     margin-bottom: 20px;
   }
 }
@@ -396,6 +418,19 @@ h6 {
   .adress-footer .link {
     display: block;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adress-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 231px;
   }
 }
 
@@ -413,6 +448,8 @@ h6 {
 }
 
 .footer .title {
+  display: block;
+  margin-bottom: 20px;
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
@@ -422,14 +459,18 @@ h6 {
 
 @media screen and (max-width: 1199px) {
   .footer .title {
-    display: block;
     text-align: center;
     margin-top: 60px;
-    margin-bottom: 20px;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
+  .footer .title {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .list.join .title {
     margin-top: 0px;
   }
@@ -446,6 +487,12 @@ h6 {
             flex-direction: column;
     margin-left: 165px;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list.join {
+    margin-left: 69px;
   }
 }
 
@@ -492,6 +539,20 @@ h6 {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .list.form {
+    margin-left: 94px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
 .footer-form-textarea {
   height: 51px;
   padding: 14px 16px;
@@ -506,20 +567,30 @@ h6 {
   resize: none;
 }
 
-@media screen and (max-width: 767px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer-form-textarea {
-    width: 100%;
     margin-bottom: 20px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .footer-form-textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form-textarea {
     display: block;
     width: 450px;
-    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-textarea {
+    width: 350px;
   }
 }
 
@@ -549,6 +620,15 @@ h6 {
     margin-left: auto;
     margin-right: auto;
     width: 200px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form .link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     height: 50px;
   }
 }
@@ -916,19 +996,25 @@ h6 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients li {
     width: calc((100% / 3) - 20px);
   }
 }
 
-@media screen and (min-width: 768px) {
-  .clients li:nth-child(n + 1) {
-    margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .clients li {
+    width: calc((100% - 150px) / 6);
   }
 }
 
 @media screen and (min-width: 768px) {
+  .clients li:nth-child(n + 2) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients li:nth-child(3n + 1) {
     margin-left: 0px;
   }
@@ -943,6 +1029,12 @@ h6 {
 @media screen and (max-width: 1199px) {
   .clients li {
     margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients li {
+    margin-top: 50px;
   }
 }
 
@@ -1394,9 +1486,22 @@ h6 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .projects > li {
+    width: calc((100% - 60px) / 3);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects > li:nth-child(2n) {
     margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects > li:nth-child(3n + 1) {
+    margin-left: 0px;
   }
 }
 
