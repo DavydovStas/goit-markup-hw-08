@@ -127,6 +127,7 @@ h6 {
 .header-box.is-open {
   display: block;
   position: absolute;
+  z-index: 5;
   top: 100%;
   left: 0;
   width: 100%;
@@ -1032,12 +1033,6 @@ h6 {
   fill: #2196f3;
 }
 
-.filter .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  text-align: left;
-}
-
 .button-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1046,6 +1041,31 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .button-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    height: 91px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-list li {
+    height: 38px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-list li:nth-child(4) {
+    margin-left: 0px;
+  }
 }
 
 .button-list li + li {
@@ -1064,6 +1084,12 @@ h6 {
   cursor: pointer;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    height: 38px;
+  }
 }
 
 .button:focus, .button:hover {

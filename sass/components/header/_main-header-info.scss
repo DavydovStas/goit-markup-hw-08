@@ -43,6 +43,7 @@
 .header-box.is-open {
   display: block;
   position: absolute;
+  z-index: 5;
   top: 100%;
   left: 0;
   width: 100%;
