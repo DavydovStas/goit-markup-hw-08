@@ -1,15 +1,27 @@
 // Список проектов
 
-// .projects {
-//   display: block;
-//   // flex-wrap: wrap;
-// }
+.projects {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .projects > li {
   // margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 15px);
+  }
+}
+
+.projects > li:nth-child(2n) {
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
 }
 
 .projects > li:hover {

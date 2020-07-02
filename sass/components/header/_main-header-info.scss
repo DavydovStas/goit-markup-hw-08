@@ -5,11 +5,15 @@
 
 .header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .menu-button {
@@ -37,7 +41,16 @@
 }
 
 .header-box {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // align-content: space-between;
+
+    margin-left: 81px;
+  }
 }
 
 .header-box.is-open {
@@ -75,18 +88,24 @@
 // }
 
 .header .navigation {
-  margin-bottom: 60px;
-
   color: $title-text-color;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .navigation .list {
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .navigation .link:hover,
@@ -98,11 +117,21 @@
   // padding: 32px 0px;
   color: inherit;
 
-  // height: 80px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
 }
 
 .navigation li + li {
-  margin-top: 40px;
+  @media screen and (max-width: 767px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+  }
 }
 
 // // .navigation li {
@@ -113,13 +142,24 @@
 
 // Адрес Хэдера
 
-// .adres {
-//   margin-left: auto;
+.adres {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-left: 50px;
+  }
+}
+
+// .adres a {
+//   display: flex;
+//   justify-content: center;
 // }
 
-.adres a {
-  display: flex;
-  justify-content: center;
+.adres {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 // .adres .link + .link {
@@ -127,7 +167,8 @@
 // }
 
 .adres .link {
-  // align-items: center;
+  display: flex;
+  align-items: center;
 
   color: inherit;
 
@@ -137,10 +178,24 @@
   letter-spacing: 0.02em;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 
+// .adres .link + .link {
+//   margin-top: 16px;
+// }
+
 .adres .link + .link {
-  margin-top: 16px;
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+  }
 }
 
 .adres .link:hover,
