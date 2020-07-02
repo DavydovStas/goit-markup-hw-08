@@ -34,6 +34,11 @@
   }
 }
 
+.menu-button:hover > svg,
+.menu-button:focus > svg {
+  fill: $accent-color;
+}
+
 .menu-button .icon-cross {
   display: none;
 }

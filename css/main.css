@@ -140,6 +140,11 @@ h6 {
   }
 }
 
+.menu-button:hover > svg,
+.menu-button:focus > svg {
+  fill: #2196f3;
+}
+
 .menu-button .icon-cross {
   display: none;
 }
@@ -937,6 +942,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #afb1b8;
 }
 
 .social-list .link {
