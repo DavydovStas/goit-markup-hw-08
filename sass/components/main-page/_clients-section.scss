@@ -24,8 +24,6 @@
 }
 
 .clients li {
-  // widtsh: 170px;
-
   @media screen and (max-width: 767px) {
     width: calc(100% / 2 - 15px);
   }
